@@ -1,0 +1,290 @@
+*{  /* sayfanın tamamını etkiler */
+
+    box-sizing: border-box; /* sayfamızda border ve padding gibi değerleri eklediğimizde içeriklerimizin genişlemesini önleme amaçlı kullanılır */
+    
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
+#menu{
+     height: 80px;
+     padding: 0 20px ; /* iç boşluk */
+}
+#logo{
+    font-size: 30px;
+    line-height: 80px;  /* üst alt boşlukları eşitleme */
+    color: #003666;
+    float: left;
+}
+nav{
+    float: right;
+    line-height: 80px;      
+}
+nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+nav a:hover{
+    border-bottom: 2px solid #003666;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+.icon{
+    margin-right: 7px;
+    font-size: 25px;  /* 16 pixel yaptı burayı */
+}
+#anasayfa{
+    background-color: gray;
+    height: 600px;
+    background-image: url("../resimler/mehmet.jpeg"); /* normalde r2.jpg olacak */
+    background-size: cover; /* alanın içine resmi sığdırma */
+    background-position: center;
+    background-attachment: fixed; /* sabit duran görsel  elde ettik*/
+}
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    transform: translate(-50%,-50%); /* içeriğin tam orta noktasına göre konumlandırma kodu */
+    font-size: 20px;
+}
+#hakkimizda{
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+  /*  text-transform: capitalize;*/ /* kelime başlangıçları büyük olacak */
+    font-weight: 600;
+}
+h3{
+    font-size: 55px;
+    color:#003666;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+#sol{
+    float: left;
+    border-right: 3px solid #445c6e;
+    font-size: 30px;
+    width: 400px;
+    color:#445c6e
+}
+#h5sol{
+    line-height: 1.6; /* normal değerin 1.6 katı demek */
+    font-size: 22px;
+    font-weight: 600;
+}
+#h5sol, #sag{
+   /* margin: 0; */    /* dış boşluk 0 lama */
+   /* padding: 0; */ /* iç boşluk 0 lama */
+    margin-top: 20px; 
+}
+span{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
+}
+#sag{
+    float: right;
+    width: 750px;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 1px; /* harf aralığını açmak için */
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.mt100{
+    margin-top: 100px;
+}
+#pson{
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-weight: 100;
+}
+#urunler{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px;
+    height: 700px;   
+}
+.card{
+    width: 350px;
+    height: 485px;
+    border: 1px solid #ddd;
+    padding: 0;
+    display: inline-block; /* kartların yan yana gelmesini istiyorum */
+
+}
+.baslikcard{
+    font-size: 15px;
+    color: #003666;
+}
+.cardp{
+    color:#888;
+}
+.card:hover{
+    border: 2px solid gray ;
+    opacity: 50%;
+    transition: 1s;
+}
+#ekip{
+    background-color: #003666;
+    padding: 50px;
+    height: 950px;
+    text-align: center;
+    margin-top: 25px;
+}
+#ekiph3{
+    color: white;
+}
+.sutun-sol-sag{
+    width: 385px;
+    float: left;
+    padding: 50px;
+}
+.oval{
+    border-radius: 50%;
+}
+.ekipisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.ekipp{
+    color:#888;
+    font-size: 18px;
+}
+.social{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+.social:hover{
+    background-color: #888;
+    transition: 1s;
+}
+.sutun{
+    width: 385px;
+    float: left;
+    padding: 10px;
+}
+#iletisim{
+    background: url(../resimler/iletisim.jpg);
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+#h3iletisim{
+    color: white;
+}
+#iletisimopak{
+    background:rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+    border-radius: 10px; /* orjinali 5px */
+    margin-bottom: 50px;
+    height: 550px;
+}
+#formgroup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+#solform{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+#sagform{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+.formcontrol{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type="submit"]{
+    cursor: pointer; /* Butonun üzerine geldiğimizde mause'ın görüntüsü değişecek. El şeklinde olacak. */
+    background-color: #445c6e;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding:10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+#adress{
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+}
+#adresbaslik{
+    font-size: 30px;
+    color: white;
+}
+.adressp{
+    color:#ddd;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+#copyright{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+#up{
+    color: white;
+    border:1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 9px 12px;
+    margin-top: 20px;
+}
